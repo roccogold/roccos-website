@@ -352,12 +352,12 @@
   /* Social icons */
   .social-icon {
     @apply w-12 h-12 flex items-center justify-center rounded-xl;
-    @apply border border-border bg-surface text-foreground;
-    @apply transition-all duration-300 cursor-pointer;
+    @apply border-2 border-primary/20 bg-surface/50 text-primary;
+    @apply transition-all duration-300 cursor-pointer backdrop-blur-sm;
   }
 
   .social-icon:hover {
-    @apply bg-primary text-primary-foreground scale-110;
+    @apply bg-primary text-primary-foreground scale-110 border-primary/50;
     box-shadow: var(--shadow-glow);
   }
 
