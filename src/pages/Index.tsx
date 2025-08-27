@@ -6,7 +6,6 @@ import { WorkSection } from '../components/WorkSection';
 import { ContactSection } from '../components/ContactSection';
 import { Footer } from '../components/Footer';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import heroBackground from '../assets/hero-bg.jpg';
 
 const Index = () => {
   useScrollReveal();
@@ -16,19 +15,11 @@ const Index = () => {
       <div className="min-h-screen relative">
         <CustomCursor />
         
-        {/* Hero background image */}
-        <div 
-          className="fixed inset-0 opacity-5 pointer-events-none z-0"
-          style={{
-            backgroundImage: `url(${heroBackground})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        />
-        
-        {/* Background gradient overlay */}
-        <div className="fixed inset-0 bg-gradient-glow opacity-20 pointer-events-none z-0" />
+        {/* Geometric Grid Background */}
+        <div className="fixed inset-0 pointer-events-none z-0">
+          <div className="geometric-grid" />
+          <div className="geometric-dots" />
+        </div>
         
         <main className="relative z-10">
           <Header />
