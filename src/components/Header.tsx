@@ -43,7 +43,7 @@ export function Header() {
           </p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-2">
           <button
             onClick={toggleTheme}
             className="theme-toggle-modern group relative overflow-hidden"
