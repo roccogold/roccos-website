@@ -50,17 +50,11 @@ export function Header() {
             aria-label="Toggle theme"
             title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
-            <div className="toggle-track">
-              <div className={`toggle-thumb ${theme === 'light' ? 'toggle-thumb-light' : ''}`}>
-                <div className="toggle-icon">
-                  {theme === 'dark' ? (
-                    <MoonIcon className="w-3 h-3" />
-                  ) : (
-                    <SunIcon className="w-3 h-3" />
-                  )}
-                </div>
-              </div>
-            </div>
+            {theme === 'dark' ? (
+              <MoonIcon className="w-6 h-6" />
+            ) : (
+              <SunIcon className="w-6 h-6" />
+            )}
             
             <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
               <div className="bg-surface/90 backdrop-blur-sm border border-border rounded-lg px-3 py-2 text-xs whitespace-nowrap shadow-lg">
