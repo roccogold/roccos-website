@@ -15,10 +15,10 @@ const Index = () => {
       <div className="min-h-screen relative">
         <CustomCursor />
         
-        {/* Geometric Grid Background */}
+        {/* Animated Gradient Mesh Background */}
         <div className="fixed inset-0 pointer-events-none z-0">
-          <div className="geometric-grid" />
-          <div className="geometric-dots" />
+          <div className="gradient-mesh" />
+          <div className="gradient-orbs" />
         </div>
         
         <main className="relative z-10">
