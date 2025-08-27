@@ -337,6 +337,14 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: hsl(var(--primary)); /* Fallback color */
+  }
+
+  /* Ensure gradient text works in all browsers */
+  @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+    .gradient-text {
+      color: hsl(var(--primary));
+    }
   }
 
   /* Interactive elements */
